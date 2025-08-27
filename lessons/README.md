@@ -1,1 +1,1 @@
-Incomplete Lessons
+Course Lessons
