@@ -10,5 +10,4 @@ __pycache__/
 *.pid
 *.pid.lock
 *.lock
-
 study-guides/
