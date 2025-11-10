@@ -1,11 +1,13 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "hostRequirements": {
-    "cpus": 4
+  "name": "Copilot Codespace",
+  "build": {
+    "dockerfile": "Dockerfile"
   },
+  "forwardPorts": [
+    6080
+  ],
   "waitFor": "onCreateCommand",
-  "updateContentCommand": "python3 -m pip install -r requirements.txt",
-  "postCreateCommand": "",
+  "postCreateCommand": "bash .devcontainer/setup.sh",
   "customizations": {
     "codespaces": {
       "openFiles": []
@@ -14,8 +16,9 @@
       "extensions": [
         "ms-toolsai.jupyter",
         "ms-python.python",
-          "github.copilot",
-          "github.copilot-chat",
+        "github.copilot",
+        "github.copilot-chat",
+        "sumneko.lua",
       ],
       "settings": {
         "terminal.integrated.shell.linux": "/bin/bash"

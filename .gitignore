@@ -10,4 +10,4 @@ __pycache__/
 *.pid
 *.pid.lock
 *.lock
-study-guides/
+node_modules/
