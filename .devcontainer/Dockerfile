@@ -1,4 +1,3 @@
-
 # Base devcontainer (Ubuntu 22.04)
 FROM mcr.microsoft.com/devcontainers/base:ubuntu-22.04
 
@@ -12,7 +11,7 @@ RUN add-apt-repository ppa:bartbes/love-stable
 RUN apt-get update && apt-get install -y \
     love xvfb x11vnc fluxbox novnc websockify supervisor xauth x11-apps \
     lua5.4 git curl wget unzip ca-certificates \
- && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/*
 
 # Install Node.js, npm, and npx
 RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
