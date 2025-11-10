@@ -1,4 +1,5 @@
 {
+  "name": "Copilot Codespace",
   "build": {
     "dockerfile": "Dockerfile"
   },
