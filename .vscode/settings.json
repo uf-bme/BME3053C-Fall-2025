@@ -1,4 +1,14 @@
 {
-    "python-envs.defaultEnvManager": "ms-python.python:system",
-    "python-envs.pythonProjects": []
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "python.analysis.aiCodeActions": {
+
+        "implementAbstractClasses": true,
+        "generateSymbol": true,
+        "convertFormatString": true
+    },
+    "python.analysis.autoImportCompletions": true,
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "Lua.diagnostics.globals": [
+        "love"
+    ]
 }
