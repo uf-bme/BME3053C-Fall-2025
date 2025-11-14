@@ -7,10 +7,10 @@ function love.load()
 end
 
 function love.update(dt)
-  if love.keyboard.isDown("right") then player.x = player.x + player.v * dt end
-  if love.keyboard.isDown("left")  then player.x = player.x - player.v * dt end
-  if love.keyboard.isDown("down")  then player.y = player.y + player.v * dt end
-  if love.keyboard.isDown("up")    then player.y = player.y - player.v * dt end
+  if love.keyboard.isDown("d") then player.x = player.x + player.v * dt end
+  if love.keyboard.isDown("a")  then player.x = player.x - player.v * dt end
+  if love.keyboard.isDown("s")  then player.y = player.y + player.v * dt end
+  if love.keyboard.isDown("w")    then player.y = player.y - player.v * dt end
 end
 
 function love.draw()
